@@ -1,7 +1,11 @@
 {
-    "name": "calculator",
+    "name": "xicalculator",
+    "description": "A standard calculator with preservation of the history of expressions",
+    "keywords": ["react","calculator"],
     "version": "0.1.0",
     "private": true,
+    "author": "Xirade <6myusic6@gmail.com>",
+    "license": "MIT",
     "dependencies": {
         "@testing-library/jest-dom": "^5.16.1",
         "@testing-library/react": "^12.1.2",
