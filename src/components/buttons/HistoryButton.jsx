@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { AppContext } from "src/context/AppProvider";
+import { AppContext } from "../../context/AppProvider";
 
 // styles
 import "./HistoryButton.css";

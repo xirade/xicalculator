@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 // utils
-import fixedNumber from "src/utils/getFixedNumber";
+import getFixedNumber from "../../utils/getFixedNumber";
 
 // styles
 import "./HistoryList.css";
@@ -26,13 +26,13 @@ export default function HistoryList({
                                 )
                             }
                             className="expression"
-                        >{`${fixedNumber(exp.storedNumber)} ${
+                        >{`${getFixedNumber(exp.storedNumber)} ${
                                 exp.operator
-                            } ${fixedNumber(exp.number)}`}</span>
+                            } ${getFixedNumber(exp.number)}`}</span>
                         <span
                             onClick={() => onSetValue(exp.result)}
                             className="result"
-                        >{`= ${fixedNumber(exp.result)}`}</span>
+                        >{`= ${getFixedNumber(exp.result)}`}</span>
                     </p>
                 </li>
             ))}

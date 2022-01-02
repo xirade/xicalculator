@@ -1,7 +1,7 @@
 import React, { createContext, useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import getRandomNumber from "src/utils/getRandomNumber";
-import getRoundNumber from "src/utils/getRoundNumber";
+import getRandomNumber from "../utils/getRandomNumber";
+import getRoundNumber from "../utils/getRoundNumber";
 
 export const AppContext = createContext();
 

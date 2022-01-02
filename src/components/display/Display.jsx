@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { AppContext } from "src/context/AppProvider";
-import fixedNumber from "src/utils/getFixedNumber";
+import { AppContext } from "../../context/AppProvider";
+import getFixedNumber from "../../utils/getFixedNumber";
 
 // styles
 import "./Display.css";
@@ -15,15 +15,15 @@ export default function Display() {
                     {!error
                         ? !storedNumber
                             ? "Enter number"
-                            : `${fixedNumber(storedNumber)} ${operator} ${
-                                number ? fixedNumber(number) : ""
+                            : `${getFixedNumber(storedNumber)} ${operator} ${
+                                number ? getFixedNumber(number) : ""
                             }`
                         : error}
                 </span>
                 <span>
                     {!number.length && !storedNumber
                         ? "0"
-                        : fixedNumber(number) || fixedNumber(storedNumber)}
+                        : getFixedNumber(number) || getFixedNumber(storedNumber)}
                 </span>
             </div>
         </>

@@ -1,5 +1,5 @@
 import React, { useContext, useRef } from "react";
-import { AppContext } from "src/context/AppProvider";
+import { AppContext } from "../../context/AppProvider";
 
 // components
 import EqualButton from "../buttons/EqualButton";
