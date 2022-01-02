@@ -1,0 +1,70 @@
+.history-tab {
+    position: relative;
+}
+
+div .history-button,
+div .number-button {
+    font-family: "Orbitron", sans-serif;
+    outline: none;
+    position: absolute;
+    top: 0;
+    left: 25px;
+    padding: 10px 5px;
+    font-size: 1em;
+    border: 1px solid transparent;
+    border-top: none;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    box-shadow: inset 0 5px 5px -5px rgb(0 0 0 / 20%);
+    transition: background-color 0.2s;
+    animation: shadowFadeOut 0.2s ease-in-out;
+}
+
+div .history-button {
+    background-color: #f8ae6d;
+}
+
+div .number-button {
+    background-color: #e5d7ac;
+}
+
+div .history-button:hover,
+div .number-button:hover {
+    box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 20%);
+    animation: shadowFadeIn 0.2s ease-in-out;
+}
+
+div .history-button:hover {
+    background-color: #d89860;
+}
+div .number-button:hover {
+    background-color: #b9ae8c;
+}
+
+div .history-button:active {
+    font-weight: bold;
+}
+
+@keyframes shadowFadeIn {
+    0% {
+        box-shadow: inset 0 5px 5px -5px rgb(0 0 0 / 20%);
+    }
+    50% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 20%);
+    }
+}
+
+@keyframes shadowFadeOut {
+    0% {
+        box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 20%);
+    }
+    50% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: inset 0 5px 5px -5px rgb(0 0 0 / 20%);
+    }
+}

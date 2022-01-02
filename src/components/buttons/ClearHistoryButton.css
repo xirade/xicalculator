@@ -1,0 +1,22 @@
+.history__clear-button {
+    border: 1px solid #bbb;
+    font-family: "Orbitron", sans-serif;
+    border-radius: 5px;
+    font-size: 0.7em;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #0ed43f;
+    transition: border-color 0.2s ease-in-out, background-color 0.2s,
+        box-shadow 0.2s;
+}
+
+.history__clear-button:hover {
+    background-color: #0bb335;
+    box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 20%);
+    border-color: #aaa;
+}
+
+.history__clear-button:active {
+    font-weight: bold;
+}

@@ -1,0 +1,27 @@
+.back-button {
+    position: relative;
+    padding: 10px 25px;
+    border: 1px solid #ff4b4b;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #db4444;
+    transition: border-color 0.2s ease-in-out, background-color 0.2s,
+        box-shadow 0.2s;
+}
+
+.back-button img {
+    filter: brightness(0) invert(1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.back-button:hover {
+    background-color: #b93939;
+    box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 20%);
+    border-color: #e04242;
+}
